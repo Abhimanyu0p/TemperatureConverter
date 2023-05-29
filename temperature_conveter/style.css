@@ -1,0 +1,123 @@
+/*style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color:  #f06292;
+    color: #222;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    width: 800px;
+    height: 700px;
+    background-color: rgb(244, 156, 226);
+    padding: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+      -10px -10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .title {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .temperature-converter {
+    background:  rgb(244, 156, 226);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 25px 20px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+
+  }
+  .result {
+    text-align: center;
+    margin: 20px 0;
+     
+  }
+  .result-heading {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .celsius-value {
+    border-bottom: 2px solid blueviolet;
+    padding: 10px;
+  }
+  label {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+    font-family:'Times New Roman', Times, serif
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  input:focus {
+    border: 1px solid #4c49f3;
+  }
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+  }
+  option {
+    background-color:#f06292;
+    color: #f6f6f6;
+  }
+  #convert-btn {
+    background: linear-gradient(to bottom, cyan, cyan);
+    border: black;
+    outline: black;
+    border-radius: 5px;
+    font-size: larger;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+    font-family:'Times New Roman', Times, serif
+  }
+  #convert-btn:hover {
+     box-shadow: 0 0 10px cyan, 
+     0 0 10px cyan, 0 0 10px cyan,
+     0 0 10px cyan, 0 0 10px cyan;
+  }
